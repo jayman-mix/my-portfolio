@@ -5,7 +5,7 @@ export default function Header(){
         <header className="sticky top-0 z-50 bg-brand ">
             <nav className="max-w-5x1 mx-auto flex items-center justify-between px-6 py-4">
                 <Link href="/" className="font-heading font-bold uppercase text-4xl text-white ">
-                    Jayman<span className="text-accent">.</span>
+                    Jayman<span className="text-accent text-5xl ">.</span>
                 </Link>
                 <ul className="menu flex gap-6 font-heading uppercase text-lg">
                     <li>

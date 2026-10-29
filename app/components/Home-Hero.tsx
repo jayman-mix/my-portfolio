@@ -3,7 +3,7 @@ import RotatingText from "./RotatingText";
 
 export default function HomeHero() {
     return (
-        <section className="min-h-[80vh] flex gap-7 flex-col items-center justify-center px-6 text-center text-white">
+        <section className="min-h-[100vh] flex gap-7 flex-col items-center justify-center px-6 text-center text-white">
             <div className="flex flex-col gap-2 items-center justify-center">
                 <h1 className="font-heading text-6xl font-bold">Hi! I'm Jayman Bernal</h1>
                 <RotatingText />

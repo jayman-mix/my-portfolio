@@ -7,6 +7,7 @@
 
 @theme inline {
   --color-white: #FFFFFF;
+  --color-black: #000000;
   --color-brand: #131A1D;
   --color-accent: #5C7E8F;
   --color-background: var(--background);
@@ -32,6 +33,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-adam);
 }
 
+p.black {
+  margin-bottom: 15px;
+  color: #000;
+}
 /* Button */
 
 .btn {
@@ -52,9 +57,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn:hover svg path {
-  animation: border-animate 3s cubic-bezier(0.62, 0.97, 0.76, 0.73);
+  animation: border-animate 3s cubic-bezier(0.62, 0.97, 0.76, 0.73) alternate;
   stroke-dasharray: 500;
-  stroke-dashoffset: 0  0;
+  stroke-dashoffset: 0;
 	display: block;
 }
 
@@ -67,41 +72,20 @@ h1, h2, h3, h4, h5, h6 {
     stroke-dashoffset: 0;
   }
 }
-
-.btn2 {
-  border-radius: 100px;
-  transition: 0.3s ease;
-  height: 53px;
-  width: 176px;
-}
-
-.btn2:hover {
-  box-shadow: 0px 0px 0px var(--color-accent);
-  transition: 0.3s ease;
-}
-
-.btn2 svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.btn2:hover svg path {
-  animation: border-animate 3s cubic-bezier(0.62, 0.97, 0.76, 0.73);
-  stroke-dasharray: 500;
-  stroke-dashoffset: 0  0;
-	display: block;
-}
-
+/* 
 @-webkit-keyframes border-animate {
-  from {
+  0% {
     stroke-dashoffset: 1000;
   }
 	
-	to {
+	50% {
     stroke-dashoffset: 0;
   }
-}
+  
+	100% {
+    stroke-dashoffset: 1000;
+  }
+} */
 
 /* Menu */
 .menu {
@@ -147,4 +131,10 @@ width: 100%;
 
 .rotating-word {
   animation: word-in 0.5s ease;
+}
+
+/* image */
+img{
+  box-shadow: 5px 5px 0 #5C7E8F;
+  border-radius: 10px;
 }
